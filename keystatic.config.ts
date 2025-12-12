@@ -5,7 +5,11 @@ export const markdocConfig = fields.markdoc.createMarkdocConfig({});
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'github',
+    repo: {
+      owner: 'M-Creative-ltd',
+      name: 'forest4life-new',
+    },
   },
 
   collections:{
