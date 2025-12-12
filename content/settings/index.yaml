@@ -1,0 +1,39 @@
+siteName: Forest4Life
+logo: /images/settings/logo.png
+footer:
+  organizationName: Forest4Life
+  description: >-
+    The Forest4Life Project is dedicated to restoring degraded land in Rwanda
+    through reforestation, agroforestry, and sustainable land management
+    practices. We empower communities, train farmers, and engage youth to create
+    a sustainable, green future for generations to come.
+  tags:
+    - Reforestation
+    - Community Training
+    - Youth Education
+  contact:
+    address: Kayovu, bugesera, Rwanda
+    phone: '+250789943032'
+    email: murenzidavid01@gmail.com
+    whatsapp: '+250789943032'
+  socialLinks:
+    - platform: facebook
+      url: https://facebook.com/
+    - platform: twitter
+      url: https://x.com/Forest4lifec
+    - platform: linkedin
+      url: https://www.linkedin.com/company/forest4life/
+    - platform: instagram
+      url: https://instagram.com/forest4life
+  copyright: © 2025 Forest4Life. All rights reserved.
+  tagline: Restoring Rwanda's Forests, Empowering Communities for a sustainable future
+seo:
+  metaTitle: Forest4Life - Restoring Rwanda's Forests, Empowering Communities
+  metaDescription: >-
+    Join Forest4Life in transforming degraded lands across Rwanda through
+    sustainable reforestation, empowering communities, and creating a greener
+    future.
+  keywords: >-
+    forest restoration, reforestation, Rwanda, community empowerment,
+    agroforestry, environmental conservation
+  ogImage: /images/seo/seo/ogImage.png

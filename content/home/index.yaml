@@ -1,0 +1,77 @@
+hero:
+  title: Forest Restoration in Rwanda
+  highlightedPhrase: One Tree at a Time
+  subtitle: >-
+    Join Forest4Life in transforming degraded lands across Rwanda through
+    sustainable reforestation, empowering communities, and creating a greener
+    future.
+  backgroundImage: /images/home/hero/backgroundImage.jpeg
+  primaryCTA:
+    text: Explore Our Programs
+    href: /services
+  secondaryCTA:
+    text: Learn About Us
+    href: /about
+  stats:
+    - value: 1,000+
+      label: Hectares Restored
+    - value: 50,000+
+      label: Trees Planted
+    - value: 500+
+      label: Farmers Trained
+whoWeAre:
+  title: Leading Rwanda's Forest Restoration
+  paragraphs:
+    - >-
+      4At Forest4Life, The Forest4Life Project is dedicated to restoring
+      degraded land in Rwanda through reforestation, agroforestry, and
+      sustainable land management practices.
+    - >-
+      By planting native trees, training farmers in Good Agricultural Practices
+      (GAP) and conservation agriculture, and engaging youth in environmental
+      stewardship, we aim to enhance biodiversity, mitigate climate change, and
+      create a sustainable future.
+  keyValues:
+    - icon: Leaf
+      title: Environmental Restoration
+      description: Healing degraded lands through native tree planting
+    - icon: Target
+      title: Community Impact
+      description: Empowering farmers and youth for lasting change
+    - icon: home
+      title: here goes the title
+      description: I will explain later
+  mission:
+    title: Our Mission
+    description: >-
+      Creating a sustainable future through forest restoration, community
+      empowerment, and environmental education across Rwanda.
+    foundedYear: '2023'
+projectsIntro:
+  title: Transforming Communities Through Action
+  intro: >-
+    Discover our ongoing and completed projects that are making a real
+    difference in forest restoration and community empowerment across Rwanda.
+  featured_projects:
+    - trial-of-this-project
+    - trial-of-this-project-copy
+    - trial-of-this-project-copy-copy
+servicesIntro:
+  title: Comprehensive Solutions for Sustainable Growth
+  intro: >-
+    We provide integrated services that address environmental restoration,
+    agricultural sustainability, and community empowerment.
+  featured_services:
+    - kwita-ingagi-amazina
+    - kwita-ingagi-amazina-copy
+  ctaPanel:
+    heading: Ready to Make a Difference?
+    body: >-
+      Join us in our mission to restore Rwanda's forests and empower communities
+      through sustainable practices and environmental education.
+    primaryCTA:
+      text: Partner With Us
+      href: /contact
+    secondaryCTA:
+      text: Contact Our Team
+      href: /contact

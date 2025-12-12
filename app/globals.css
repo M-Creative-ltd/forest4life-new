@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Forest4Life Design System - Professional Green Theme
+All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Clean white background with natural foreground */
+    --background: 0 0% 100%;
+    --foreground: 150 25% 15%;
+
+    /* Card system - Clean and professional */
+    --card: 0 0% 100%;
+    --card-foreground: 150 25% 15%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 25% 15%;
+
+    /* Primary - Forest4Life signature green */
+    --primary: 142 69% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 142 69% 30%;
+    --primary-light: 142 45% 88%;
+
+    /* Secondary - Natural earth tones */
+    --secondary: 42 21% 94%;
+    --secondary-foreground: 150 25% 15%;
+
+    /* Muted tones for subtle elements */
+    --muted: 120 20% 95%;
+    --muted-foreground: 158 91% 20%;
+
+    /* Accent - Vibrant forest green */
+    --accent: 135 65% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 69% 35%;
+    --success-foreground: 0 0% 100%;
+
+    /* Border and input styles */
+    --border: 120 20% 90%;
+    --input: 120 20% 95%;
+    --ring: 142 69% 35%;
+
+    /* Design system radius */
+    --radius: 0.75rem;
+
+    /* Container padding - Horizontal padding from screen edges to content */
+    --container-padding-mobile: 1rem;      /* 16px - px-4 */
+    --container-padding-tablet: 1.5rem;   /* 24px - px-6 */
+    --container-padding-large: 2.5rem;       /* 32px - px-8 (~1.25 inches) */
+    --container-padding-xl: 6rem;         /* 48px - px-12 (~1.9 inches) */
+
+    /* Custom Forest4Life gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 69% 35%), hsl(135 65% 25%));
+    --gradient-subtle: linear-gradient(180deg, hsl(120 45% 98%), hsl(120 20% 95%));
+    --gradient-forest: linear-gradient(45deg, hsl(142 69% 35%), hsl(120 60% 40%));
+
+    /* Shadows with green tint */
+    --shadow-elegant: 0 4px 6px -1px hsl(142 20% 35% / 0.1);
+    --shadow-card: 0 1px 3px 0 hsl(142 20% 35% / 0.1);
+    --shadow-hero: 0 20px 40px -10px hsl(142 69% 35% / 0.2);
+
+    /* Animation transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - Rich forest tones */
+    --background: 150 30% 8%;
+    --foreground: 120 20% 95%;
+
+    --card: 150 25% 12%;
+    --card-foreground: 120 20% 95%;
+
+    --popover: 150 25% 12%;
+    --popover-foreground: 120 20% 95%;
+
+    --primary: 142 55% 55%;
+    --primary-foreground: 150 30% 8%;
+    --primary-hover: 142 55% 50%;
+    --primary-light: 142 25% 25%;
+
+    --secondary: 150 15% 20%;
+    --secondary-foreground: 120 20% 95%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 158 50% 70%;
+
+    --accent: 135 50% 45%;
+    --accent-foreground: 150 30% 8%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 120 20% 95%;
+    --success: 142 55% 55%;
+    --success-foreground: 150 30% 8%;
+
+    --border: 150 15% 25%;
+    --input: 150 15% 20%;
+    --ring: 142 55% 55%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(142 55% 55%), hsl(135 50% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(150 25% 12%), hsl(150 15% 18%));
+    --gradient-forest: linear-gradient(45deg, hsl(142 55% 55%), hsl(120 45% 50%));
+
+    /* Dark mode shadows */
+    --shadow-elegant: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.2);
+    --shadow-hero: 0 20px 40px -10px hsl(142 55% 55% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply scroll-m-20 tracking-tight;
+  }
+
+  h1 {
+    @apply text-3xl font-bold md:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold md:text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl font-semibold md:text-2xl lg:text-3xl;
+  }
+
+  h4 {
+    @apply text-lg font-semibold md:text-xl;
+  }
+
+  .hero-text {
+    @apply text-4xl font-bold leading-tight md:text-5xl lg:text-6xl xl:text-7xl;
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20 xl:py-24;
+  }
+
+  .container-width {
+    @apply mx-auto w-full;
+    padding-left: var(--container-padding-mobile);
+    padding-right: var(--container-padding-mobile);
+  }
+
+  @media (min-width: 640px) {
+    .container-width {
+      padding-left: var(--container-padding-tablet);
+      padding-right: var(--container-padding-tablet);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-width {
+      padding-left: var(--container-padding-large);
+      padding-right: var(--container-padding-large);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-width {
+      padding-left: var(--container-padding-xl);
+      padding-right: var(--container-padding-xl);
+    }
+  }
+
+  .card-hover {
+    transition: var(--transition-smooth);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hero);
+  }
+}
+
+
