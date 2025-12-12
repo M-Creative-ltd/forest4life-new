@@ -116,7 +116,7 @@ forest4life/
    npm install
    ```
 
-3. **Set up environment variables** (if using GitHub storage)
+3. **Set up environment variables** (required for GitHub storage)
    Create a `.env.local` file in the root directory:
    ```env
    KEYSTATIC_GITHUB_CLIENT_ID=your_client_id
@@ -124,6 +124,8 @@ forest4life/
    KEYSTATIC_SECRET=your_secret
    NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG=your_app_slug
    ```
+   
+   **Note**: This project is configured to use GitHub storage. See the setup instructions in the Keystatic admin UI at `/keystatic` for creating the GitHub App.
 
 4. **Run the development server**
    ```bash
