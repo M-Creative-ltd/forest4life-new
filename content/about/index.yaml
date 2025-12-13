@@ -1,69 +1,110 @@
 hero:
   title: Restoring Rwanda's Forests, Empowering Communities
-  subtitle: Forest4Life is dedicated to combating deforestation and land degradation through innovative restoration techniques, community engagement, and sustainable development practices that benefit both people and planet.
+  subtitle: >-
+    Forest4Life is dedicated to combating deforestation and land degradation
+    through innovative restoration techniques, community engagement, and
+    sustainable development practices that benefit both people and planet.
 story:
   paragraphs:
-    - Founded in 2018, Forest4Life emerged from a pressing need to address Rwanda's environmental challenges while creating sustainable livelihoods for rural communities. Our founders, a team of environmental scientists and community development experts, recognized that successful forest restoration requires both scientific rigor and deep community engagement.
-    - What started as a small pilot project in Bugesera District has grown into a nationally recognized organization, implementing large-scale restoration projects across multiple districts. Our approach combines traditional ecological knowledge with modern conservation science, ensuring that our interventions are both environmentally sound and culturally appropriate.
-    - Today, we work closely with government agencies, international partners, and local communities to restore degraded landscapes, improve agricultural productivity, and build resilience against climate change impacts.
-  image: null
+    - >-
+      Founded in 2018, Forest4Life emerged from a pressing need to address
+      Rwanda's environmental challenges while creating sustainable livelihoods
+      for rural communities. Our founders, a team of environmental scientists
+      and community development experts, recognized that successful forest
+      restoration requires both scientific rigor and deep community engagement.
+    - >-
+      What started as a small pilot project in Bugesera District has grown into
+      a nationally recognized organization, implementing large-scale restoration
+      projects across multiple districts. Our approach combines traditional
+      ecological knowledge with modern conservation science, ensuring that our
+      interventions are both environmentally sound and culturally appropriate.
+    - >-
+      Today, we work closely with government agencies, international partners,
+      and local communities to restore degraded landscapes, improve agricultural
+      productivity, and build resilience against climate change impacts.
 values:
   title: What Drives Our Work
-  intro: Our core values guide every decision we make and every project we implement, ensuring authentic impact that lasts.
+  intro: >-
+    Our core values guide every decision we make and every project we implement,
+    ensuring authentic impact that lasts.
   values:
     - icon: TreePine
       title: Environmental Stewardship
-      description: We believe in protecting and restoring our natural heritage for future generations through science-based conservation practices.
+      description: >-
+        We believe in protecting and restoring our natural heritage for future
+        generations through science-based conservation practices.
     - icon: Users
       title: Community Empowerment
-      description: Local communities are at the heart of our work. We build capacity and provide sustainable livelihood opportunities.
+      description: >-
+        Local communities are at the heart of our work. We build capacity and
+        provide sustainable livelihood opportunities.
     - icon: Handshake
       title: Collaborative Partnerships
-      description: We work with governments, NGOs, and private sector to create lasting change through strategic partnerships.
+      description: >-
+        We work with governments, NGOs, and private sector to create lasting
+        change through strategic partnerships.
     - icon: Target
       title: Impact-Driven Results
-      description: Every project is designed with measurable outcomes that create tangible benefits for people and planet.
+      description: >-
+        Every project is designed with measurable outcomes that create tangible
+        benefits for people and planet.
 team:
   title: Meet Our Leadership
-  intro: Our diverse team brings together expertise in environmental science, community development, and sustainable agriculture to drive meaningful change.
+  intro: >-
+    Our diverse team brings together expertise in environmental science,
+    community development, and sustainable agriculture to drive meaningful
+    change.
   members:
     - name: Dr. Marie Uwimana
       role: Executive Director
-      bio: Environmental scientist with 15+ years in forest restoration and community development across East Africa.
-      avatar: null
+      bio: >-
+        Environmental scientist with 15+ years in forest restoration and
+        community development across East Africa.
     - name: Jean Baptiste
       role: Programs Manager
-      bio: Expert in sustainable agriculture and farmer training programs, leading our community engagement initiatives.
-      avatar: null
+      bio: >-
+        Expert in sustainable agriculture and farmer training programs, leading
+        our community engagement initiatives.
     - name: Grace Niyonzima
       role: Research Coordinator
-      bio: Specializes in environmental impact assessment and biodiversity conservation in restored ecosystems.
-      avatar: null
+      bio: >-
+        Specializes in environmental impact assessment and biodiversity
+        conservation in restored ecosystems.
+    - name: 'Iradukunda Reponse '
+      role: 'Cheif '
+      avatar: /images/team/team/members/3/avatar.jpeg
 impactMetrics:
   title: Measurable Results
-  intro: Since our founding, we've achieved significant milestones in forest restoration and community empowerment across Rwanda.
+  intro: >-
+    Since our founding, we've achieved significant milestones in forest
+    restoration and community empowerment across Rwanda.
   metrics:
     - icon: TreePine
-      value: "2.5M+"
+      value: 2.5M+
       label: Trees Planted
       description: Native species planted across degraded landscapes
     - icon: Globe
-      value: "15,000+"
+      value: 15,000+
       label: Hectares Restored
       description: Forest and agricultural land brought back to life
     - icon: Users
-      value: "5,000+"
+      value: 5,000+
       label: Farmers Trained
       description: Smallholder farmers equipped with sustainable practices
     - icon: TrendingUp
-      value: "85%"
+      value: 85%
       label: Success Rate
       description: Tree survival rate in our restoration projects
 partners:
   title: Strategic Collaborations
-  intro: We work with leading organizations to amplify our impact and ensure sustainable, long-term success of our conservation efforts.
+  intro: >-
+    We work with leading organizations to amplify our impact and ensure
+    sustainable, long-term success of our conservation efforts.
   partnerList: []
+annual_reports: []
 finalCTA:
   heading: Ready to Make a Difference?
-  body: Join us in our mission to restore Rwanda's forests and empower communities. Whether you're an individual, organization, or funder, there's a place for you in our work.
-
+  body: >-
+    Join us in our mission to restore Rwanda's forests and empower communities.
+    Whether you're an individual, organization, or funder, there's a place for
+    you in our work.
