@@ -41,15 +41,15 @@ export default async function AboutPage() {
 
     // Check if it's an image path
     if (iconValue.startsWith('/') || iconValue.startsWith('http')) {
-      return (
+    return (
         <Image
           src={iconValue}
           alt="Icon"
           fill
           className="object-contain p-3"
         />
-      );
-    }
+    );
+  }
 
     // Try to resolve Lucide icon
     const IconComponent = (Icons[iconValue as keyof typeof Icons] as React.ComponentType<{ className?: string }>) || DefaultIcon;
@@ -89,7 +89,7 @@ export default async function AboutPage() {
                 <div className="prose prose-lg max-w-none text-muted-foreground">
                   {about.story.paragraphs && about.story.paragraphs.length > 0 ? (
                     about.story.paragraphs.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
+                    <p key={index}>{paragraph}</p>
                     ))
                   ) : (
                     <p>Story content is being prepared. Please check back soon.</p>

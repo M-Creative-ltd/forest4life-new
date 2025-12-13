@@ -5,14 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import {
-  MapPin,
-  Calendar,
-  Users,
-  ArrowLeft,
-  TreePine,
-  Target,
-  FileText,
+import { 
+  MapPin, 
+  Calendar, 
+  Users, 
+  ArrowLeft, 
+  TreePine, 
+  Target, 
+  FileText, 
   Download,
   ExternalLink,
   Clock,
@@ -145,7 +145,7 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
   return (
     <div className="min-h-screen">
       <HeaderWrapper />
-
+      
       <main>
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-primary/5 via-accent/5 to-primary/10 section-padding">
@@ -158,35 +158,35 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                 </Link>
               </Button>
             </div>
-
+            
             <div className="max-w-4xl">
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <Badge variant={getStatusColor(project.status) as any}>
                   {project.status}
                 </Badge>
                 {(project.district || project.location) && (
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <MapPin className="h-4 w-4" />
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <MapPin className="h-4 w-4" />
                     <span>{project.district || project.location}</span>
                     {project.region && `, ${project.region}`}
-                  </div>
+                </div>
                 )}
                 {project.start_date && (
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Calendar className="h-4 w-4" />
-                    <span>
-                      {new Date(project.start_date).getFullYear()}
-                      {project.end_date && ` - ${new Date(project.end_date).getFullYear()}`}
-                    </span>
-                  </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Calendar className="h-4 w-4" />
+                  <span>
+                    {new Date(project.start_date).getFullYear()}
+                    {project.end_date && ` - ${new Date(project.end_date).getFullYear()}`}
+                  </span>
+                </div>
                 )}
               </div>
-
+              
               <h1 className="text-4xl font-bold mb-6 lg:text-5xl">{project.title}</h1>
               {project.summary && (
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  {project.summary}
-                </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                {project.summary}
+              </p>
               )}
             </div>
           </div>
@@ -212,50 +212,50 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
 
         {/* Impact Metrics */}
         {Object.keys(impactMetricsObj).length > 0 && (
-          <section className="section-padding bg-background">
-            <div className="container-width">
-              <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <section className="section-padding bg-background">
+          <div className="container-width">
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
                 {impactMetricsObj.trees_planted !== undefined && (
-                  <Card className="text-center">
-                    <CardHeader>
-                      <TreePine className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <div className="text-3xl font-bold text-primary">
+              <Card className="text-center">
+                <CardHeader>
+                  <TreePine className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="text-3xl font-bold text-primary">
                         {formatNumber(impactMetricsObj.trees_planted)}
-                      </div>
-                      <CardTitle className="text-lg">Trees Planted</CardTitle>
-                    </CardHeader>
-                  </Card>
+                  </div>
+                  <CardTitle className="text-lg">Trees Planted</CardTitle>
+                </CardHeader>
+              </Card>
                 )}
-
+              
                 {impactMetricsObj.hectares_restored !== undefined && (
-                  <Card className="text-center">
-                    <CardHeader>
-                      <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <div className="text-3xl font-bold text-primary">
+              <Card className="text-center">
+                <CardHeader>
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="text-3xl font-bold text-primary">
                         {formatNumber(impactMetricsObj.hectares_restored)}
-                      </div>
-                      <CardTitle className="text-lg">Hectares Restored</CardTitle>
-                    </CardHeader>
-                  </Card>
+                  </div>
+                  <CardTitle className="text-lg">Hectares Restored</CardTitle>
+                </CardHeader>
+              </Card>
                 )}
-
+              
                 {impactMetricsObj.farmers_trained !== undefined && (
-                  <Card className="text-center">
-                    <CardHeader>
-                      <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <div className="text-3xl font-bold text-primary">
+              <Card className="text-center">
+                <CardHeader>
+                  <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="text-3xl font-bold text-primary">
                         {formatNumber(impactMetricsObj.farmers_trained)}
-                      </div>
-                      <CardTitle className="text-lg">Farmers Trained</CardTitle>
-                    </CardHeader>
-                  </Card>
+                  </div>
+                  <CardTitle className="text-lg">Farmers Trained</CardTitle>
+                </CardHeader>
+              </Card>
                 )}
               </div>
             </div>
           </section>
         )}
 
-        {/* Project Content */}
+            {/* Project Content */}
         <section className="section-padding bg-background">
           <div className="container-width">
             <div className="grid lg:grid-cols-3 gap-12">
@@ -264,51 +264,51 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                 {/* Executive Summary */}
                 {project.executive_summary && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Executive Summary</h2>
-                      <div className="prose prose-lg max-w-none text-muted-foreground">
-                        <p>{project.executive_summary}</p>
-                      </div>
-                    </section>
-                    <Separator />
+                <section>
+                  <h2 className="mb-6">Executive Summary</h2>
+                  <div className="prose prose-lg max-w-none text-muted-foreground">
+                    <p>{project.executive_summary}</p>
+                  </div>
+                </section>
+                <Separator />
                   </>
                 )}
 
                 {/* Background */}
                 {project.background && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Background</h2>
-                      <div className="prose prose-lg max-w-none text-muted-foreground">
+                <section>
+                  <h2 className="mb-6">Background</h2>
+                  <div className="prose prose-lg max-w-none text-muted-foreground">
                         {renderMarkdocContent(project.background)}
-                      </div>
-                    </section>
-                    <Separator />
+                  </div>
+                </section>
+                <Separator />
                   </>
                 )}
 
                 {/* Objectives */}
                 {project.objectives && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Objectives</h2>
-                      <div className="prose prose-lg max-w-none text-muted-foreground">
+                <section>
+                  <h2 className="mb-6">Objectives</h2>
+                  <div className="prose prose-lg max-w-none text-muted-foreground">
                         {renderMarkdocContent(project.objectives)}
-                      </div>
-                    </section>
-                    <Separator />
+                  </div>
+                </section>
+                <Separator />
                   </>
                 )}
 
                 {/* Methodology */}
                 {project.methodology && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Methodology</h2>
-                      <div className="prose prose-lg max-w-none text-muted-foreground">
+                <section>
+                  <h2 className="mb-6">Methodology</h2>
+                  <div className="prose prose-lg max-w-none text-muted-foreground">
                         {renderMarkdocContent(project.methodology)}
-                      </div>
-                    </section>
+                  </div>
+                </section>
                     <Separator />
                   </>
                 )}
@@ -355,28 +355,28 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                 {/* Timeline */}
                 {project.timeline && project.timeline.length > 0 && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Project Timeline</h2>
-                      <div className="space-y-6">
-                        {project.timeline.map((phase, index) => (
-                          <Card key={index}>
-                            <CardHeader>
-                              <div className="flex items-center justify-between">
-                                <CardTitle className="text-lg">{phase.label}</CardTitle>
-                                <Badge variant="outline">
-                                  <Clock className="h-3 w-3 mr-1" />
+                <section>
+                  <h2 className="mb-6">Project Timeline</h2>
+                  <div className="space-y-6">
+                    {project.timeline.map((phase, index) => (
+                      <Card key={index}>
+                        <CardHeader>
+                          <div className="flex items-center justify-between">
+                            <CardTitle className="text-lg">{phase.label}</CardTitle>
+                            <Badge variant="outline">
+                              <Clock className="h-3 w-3 mr-1" />
                                   {phase.from_date ? new Date(phase.from_date).getFullYear() : ''}
                                   {phase.to_date ? ` - ${new Date(phase.to_date).getFullYear()}` : ''}
-                                </Badge>
-                              </div>
-                            </CardHeader>
-                            <CardContent>
-                              <p className="text-muted-foreground">{phase.description}</p>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      </div>
-                    </section>
+                            </Badge>
+                          </div>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-muted-foreground">{phase.description}</p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </section>
                     <Separator />
                   </>
                 )}
@@ -384,42 +384,42 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                 {/* Activities */}
                 {project.activities && project.activities.length > 0 && (
                   <>
-                    <section>
-                      <h2 className="mb-6">Recent Activities</h2>
-                      <div className="space-y-4">
-                        {project.activities.map((activity, index) => (
-                          <Card key={index}>
-                            <CardHeader>
-                              <div className="flex items-start justify-between">
-                                <CardTitle className="text-lg">{activity.title}</CardTitle>
-                                <div className="flex items-center gap-2">
-                                  <Badge variant={getStatusColor(activity.status) as any}>
-                                    {activity.status}
-                                  </Badge>
-                                  <span className="text-sm text-muted-foreground">
+                <section>
+                  <h2 className="mb-6">Recent Activities</h2>
+                  <div className="space-y-4">
+                    {project.activities.map((activity, index) => (
+                      <Card key={index}>
+                        <CardHeader>
+                          <div className="flex items-start justify-between">
+                            <CardTitle className="text-lg">{activity.title}</CardTitle>
+                            <div className="flex items-center gap-2">
+                              <Badge variant={getStatusColor(activity.status) as any}>
+                                {activity.status}
+                              </Badge>
+                              <span className="text-sm text-muted-foreground">
                                     {formatDate(activity.date)}
-                                  </span>
-                                </div>
-                              </div>
-                            </CardHeader>
-                            <CardContent>
-                              <p className="text-muted-foreground">{activity.description}</p>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      </div>
-                    </section>
+                              </span>
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-muted-foreground">{activity.description}</p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </section>
                     <Separator />
                   </>
                 )}
 
                 {/* Gallery */}
                 {project.gallery && project.gallery.length > 0 && (
-                  <section>
-                    <h2 className="mb-6">Project Gallery</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {project.gallery.map((image, index) => (
-                        <Card key={index} className="overflow-hidden">
+                    <section>
+                      <h2 className="mb-6">Project Gallery</h2>
+                      <div className="grid md:grid-cols-2 gap-6">
+                        {project.gallery.map((image, index) => (
+                          <Card key={index} className="overflow-hidden">
                           {image.image ? (
                             <div className="relative aspect-[4/3]">
                               <Image
@@ -434,15 +434,15 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                               <TreePine className="h-16 w-16 text-primary/60" />
                             </div>
                           )}
-                          <CardContent className="p-4">
+                            <CardContent className="p-4">
                             {image.caption && (
                               <p className="text-sm text-muted-foreground">{image.caption}</p>
                             )}
-                          </CardContent>
-                        </Card>
-                      ))}
-                    </div>
-                  </section>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      </div>
+                    </section>
                 )}
               </div>
 
@@ -464,13 +464,13 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                       </Badge>
                     </div>
                     {(project.district || project.location) && (
-                      <div>
-                        <div className="text-sm font-medium mb-1">Location</div>
-                        <div className="text-sm text-muted-foreground">
+                    <div>
+                      <div className="text-sm font-medium mb-1">Location</div>
+                      <div className="text-sm text-muted-foreground">
                           {project.district || project.location}
                           {project.region && `, ${project.region}`}
                           {project.country && `, ${project.country}`}
-                        </div>
+                    </div>
                       </div>
                     )}
                     {project.start_date && (
@@ -507,33 +507,33 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
 
                 {/* Partners */}
                 {resolvedPartners.length > 0 && (
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Users className="h-5 w-5" />
-                        Project Partners
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Users className="h-5 w-5" />
+                      Project Partners
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
                       {resolvedPartners.map((partner, index) => (
-                        <div key={index} className="flex items-start justify-between">
-                          <div>
-                            <div className="font-medium">{partner.name}</div>
+                      <div key={index} className="flex items-start justify-between">
+                        <div>
+                          <div className="font-medium">{partner.name}</div>
                             {partner.role && (
-                              <div className="text-sm text-muted-foreground">{partner.role}</div>
+                          <div className="text-sm text-muted-foreground">{partner.role}</div>
                             )}
-                          </div>
-                          {partner.website && (
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={partner.website} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="h-4 w-4" />
-                              </a>
-                            </Button>
-                          )}
                         </div>
-                      ))}
-                    </CardContent>
-                  </Card>
+                        {partner.website && (
+                          <Button variant="ghost" size="sm" asChild>
+                            <a href={partner.website} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
                 )}
 
                 {/* Documents */}
@@ -551,23 +551,23 @@ export default async function ProjectDetailPage(props: { params: Promise<{ slug:
                         if (!docUrl) return null;
 
                         return (
-                          <div key={index} className="flex items-center justify-between">
-                            <div>
-                              <div className="text-sm font-medium">{doc.name}</div>
+                        <div key={index} className="flex items-center justify-between">
+                          <div>
+                            <div className="text-sm font-medium">{doc.name}</div>
                               {(doc.type || doc.size) && (
-                                <div className="text-xs text-muted-foreground">
+                            <div className="text-xs text-muted-foreground">
                                   {doc.type && `${doc.type}`}
                                   {doc.type && doc.size && ' • '}
                                   {doc.size && formatFileSize(doc.size)}
-                                </div>
-                              )}
                             </div>
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={docUrl} target="_blank" rel="noopener noreferrer">
-                                <Download className="h-4 w-4" />
-                              </a>
-                            </Button>
+                              )}
                           </div>
+                          <Button variant="ghost" size="sm" asChild>
+                              <a href={docUrl} target="_blank" rel="noopener noreferrer">
+                              <Download className="h-4 w-4" />
+                            </a>
+                          </Button>
+                        </div>
                         );
                       })}
                     </CardContent>

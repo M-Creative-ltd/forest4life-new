@@ -141,13 +141,13 @@ export default async function BlogDetailPage(props: { params: Promise<{ slug: st
         {blog.featured_image && (
           <section className="section-padding bg-background">
             <div className="container-width">
-              <div className="relative aspect-video overflow-hidden rounded-2xl">
-                <Image
-                  src={blog.featured_image}
-                  alt={blog.title}
-                  fill
-                  className="object-cover"
-                />
+                <div className="relative aspect-video overflow-hidden rounded-2xl">
+                  <Image
+                    src={blog.featured_image}
+                    alt={blog.title}
+                    fill
+                    className="object-cover"
+                  />
               </div>
             </div>
           </section>
@@ -156,9 +156,9 @@ export default async function BlogDetailPage(props: { params: Promise<{ slug: st
         {/* Content */}
         <section className="section-padding bg-background">
           <div className="container-width">
-            <article className="prose prose-lg max-w-none">
+              <article className="prose prose-lg max-w-none">
               {renderMarkdocContent(blog.content)}
-            </article>
+              </article>
 
               {/* Tags */}
               {blog.tags && blog.tags.length > 0 && (

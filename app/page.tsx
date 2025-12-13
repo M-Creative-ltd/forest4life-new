@@ -26,8 +26,8 @@ export default async function HomePage() {
     (home.projectsIntro.featured_projects || [])
       .filter((slug): slug is string => Boolean(slug))
       .map(async (slug) => {
-        const project = await reader.collections.projects.read(slug);
-        if (!project) return null;
+      const project = await reader.collections.projects.read(slug);
+      if (!project) return null;
 
         // Transform impact_metrics array to object format for components
         const impactMetricsObj: {
@@ -59,16 +59,16 @@ export default async function HomePage() {
           });
         }
 
-        return {
-          slug: slug,
-          title: project.title,
-          summary: project.summary || "",
-          status: project.status || "draft",
-          district: project.district || project.location || "",
-          start_date: project.start_date || "",
+      return {
+        slug: slug,
+        title: project.title,
+        summary: project.summary || "",
+        status: project.status || "draft",
+        district: project.district || project.location || "",
+        start_date: project.start_date || "",
           impact_metrics: impactMetricsObj,
-        };
-      })
+      };
+    })
   ).then(projects => projects.filter((p): p is NonNullable<typeof p> => p !== null));
 
   // Resolve featured services from relationships
@@ -76,15 +76,15 @@ export default async function HomePage() {
     (home.servicesIntro.featured_services || [])
       .filter((slug): slug is string => Boolean(slug))
       .map(async (slug) => {
-        const service = await reader.collections.services.read(slug);
-        if (!service) return null;
-        return {
-          slug: slug,
-          title: service.title,
-          short_description: service.short_description || "",
-          icon: service.icon || undefined,
-        };
-      })
+      const service = await reader.collections.services.read(slug);
+      if (!service) return null;
+      return {
+        slug: slug,
+        title: service.title,
+        short_description: service.short_description || "",
+        icon: service.icon || undefined,
+      };
+    })
   ).then(services => services.filter((s): s is NonNullable<typeof s> => s !== null));
 
   return (

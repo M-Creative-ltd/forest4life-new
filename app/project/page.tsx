@@ -17,9 +17,9 @@ export default async function ProjectsPage() {
       
       // Transform impact_metrics array to object format for components
       const impactMetricsObj: {
-        trees_planted?: number;
-        hectares_restored?: number;
-        farmers_trained?: number;
+    trees_planted?: number;
+    hectares_restored?: number;
+    farmers_trained?: number;
         [key: string]: number | undefined;
       } = {};
       

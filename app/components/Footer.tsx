@@ -11,7 +11,7 @@ import {
   Facebook, 
   Twitter, 
   Linkedin, 
-  Instagram, 
+  Instagram,
   Leaf,
   ArrowRight
 } from "lucide-react";
@@ -264,13 +264,13 @@ const Footer = ({
                   ))}
                 </div>
               ) : (
-                <div className="bg-muted/50 rounded-lg p-6">
-                  <p className="text-sm text-muted-foreground text-center italic">
-                    Partner logos and information will be displayed here.
-                    We work with local communities, international organizations,
-                    and government agencies to maximize our impact.
-                  </p>
-                </div>
+              <div className="bg-muted/50 rounded-lg p-6">
+                <p className="text-sm text-muted-foreground text-center italic">
+                  Partner logos and information will be displayed here.
+                  We work with local communities, international organizations,
+                  and government agencies to maximize our impact.
+                </p>
+              </div>
               )}
             </div>
           </div>
