@@ -22,22 +22,13 @@ hero:
     - value: 200+
       label: Farmers Trained
 whoWeAre:
-  title: VISION
+  title: VISION & MISSION
   paragraphs:
     - >-
-      By planting native trees, training farmers in Good Agricultural Practices
-      (GAP) and conservation agriculture, and engaging youth in environmental
-      stewardship, we aim to enhance biodiversity, mitigate climate change, and
-      create a sustainable future.
-    - >-
-      We restore degraded land through agroforestry and conservation agriculture
-      by integrating grafted fruit trees and native indigenous species. We equip
-      farmers and young people with practical skills in sustainable land
-      management to improve income, soil health, and long-term climate
-      resilience across Rwanda.
-    - >-
       To become Rwanda’s leading youth-driven organization advancing
-      climate-resilient agriculture and landscape restoration by 2035.
+      climate-resilient agriculture and landscape restoration by 2035. We aim to
+      scale agroforestry, strengthen rural livelihoods, and build resilient
+      ecosystems across vulnerable communities.
   keyValues:
     - icon: Leaf
       title: Environmental Restoration
