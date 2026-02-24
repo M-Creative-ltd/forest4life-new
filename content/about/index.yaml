@@ -1,5 +1,5 @@
 hero:
-  title: Restoring Rwanda's Forests, Empowering Communities
+  title: Restoring Rwanda's land, Empowering farming Communities
   subtitle: >-
     Forest4Life is dedicated to combating deforestation and land degradation
     through innovative restoration techniques, community engagement, and
@@ -7,17 +7,18 @@ hero:
 story:
   paragraphs:
     - >-
-      Founded in 2018, Forest4Life emerged from a pressing need to address
+      Founded in 2023, Forest4Life emerged from a pressing need to address
       Rwanda's environmental challenges while creating sustainable livelihoods
       for rural communities. Our founders, a team of environmental scientists
       and community development experts, recognized that successful forest
       restoration requires both scientific rigor and deep community engagement.
     - >-
       What started as a small pilot project in Bugesera District has grown into
-      a nationally recognized organization, implementing large-scale restoration
-      projects across multiple districts. Our approach combines traditional
-      ecological knowledge with modern conservation science, ensuring that our
-      interventions are both environmentally sound and culturally appropriate.
+      a nationally registered and recognized organization, implementing
+      large-scale restoration projects across three districts. Our approach
+      combines traditional ecological knowledge with modern conservation
+      science, ensuring that our interventions are both environmentally sound
+      and culturally appropriate.
     - >-
       Today, we work closely with government agencies, international partners,
       and local communities to restore degraded landscapes, improve agricultural
@@ -55,16 +56,29 @@ team:
     community development, and sustainable agriculture to drive meaningful
     change.
   members:
-    - name: Dr. Marie Uwimana
-      role: Executive Director
+    - name: KAMANZI Claudine
+      role: Managing Director
       bio: >-
-        Environmental scientist with 15+ years in forest restoration and
-        community development across East Africa.
-    - name: Jean Baptiste
-      role: Programs Manager
+        Claudine is a specialist in Conservation Agriculture, dedicated to the
+        professionalization and modernization of the agricultural sector in
+        Rwanda. With a BSc in the field, she provides the technical oversight
+        for Forest4Life’s land restoration techniques, ensuring they are
+        grounded in soil health and sustainable yield. Beyond the technical,
+        Claudine is a passionate voice for youth engagement, working to
+        transform African agriculture into a modern industry that attracts young
+        talent and drives continental transformation.
+      avatar: /images/team/team/members/0/avatar.jpg
+    - name: UBAYEHO Thadee
+      role: Good Agricultural Practice Director
       bio: >-
-        Expert in sustainable agriculture and farmer training programs, leading
-        our community engagement initiatives.
+        A specialist in Conservation Agriculture and a 2024 Wege Prize winner,
+        Thadee leads Forest4Life’s agronomy and field operations. With a
+        background in training hundreds of farmers in regenerative techniques
+        and an ongoing Master’s in Climate Change, he is the architect of our
+        Good Agricultural Practices. Thadee is passionate about using circular
+        economy principles to transform degraded landscapes into productive,
+        resilient ecosystems.
+      avatar: /images/team/team/members/1/avatar.jpg
     - name: Grace Niyonzima
       role: Research Coordinator
       bio: >-
