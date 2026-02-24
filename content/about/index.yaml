@@ -79,35 +79,52 @@ team:
         economy principles to transform degraded landscapes into productive,
         resilient ecosystems.
       avatar: /images/team/team/members/1/avatar.jpg
-    - name: Grace Niyonzima
-      role: Research Coordinator
+    - name: UTETIWABO Adeline
+      role: Stakeholder engagement Director
       bio: >-
-        Specializes in environmental impact assessment and biodiversity
-        conservation in restored ecosystems.
-    - name: 'Iradukunda Reponse '
-      role: 'Cheif '
-      avatar: /images/team/team/members/3/avatar.jpeg
+        A Conservation Agriculture graduate with specialization food processing
+        systems.  Adeline is a visionary agripreneur focused on food system
+        sustainability. As our Stakeholder Engagement Director, she bridges the
+        gap between Forest4Life’s mission and the communities we serve.
+        Adeline’s expertise in the mushroom value chain and her passion for the
+        circular economy drive her to find homegrown solutions for land
+        restoration. She believes that by utilizing locally available resources
+        and modernizing agribusiness, we can create a restored, food-secure
+        future for Rwanda.
+      avatar: /images/team/team/members/2/avatar.jpg
+    - name: 'IRADUKUNDA Reponse '
+      role: 'One Health Director '
+      bio: >-
+        A Veterinarian and Conservation Agriculture specialist, Reponse leads
+        Forest4Life’s One Health and integrated farming initiatives. He focuses
+        on sourcing multi-purpose agroforestry trees that nourish the soil while
+        providing sustainable feed for livestock. By training farmers in the
+        interconnectedness of animal and crop health, Reponse is building a
+        future where Rwandan agriculture is circular, resilient, and thriving.
+      avatar: /images/team/team/members/3/avatar.jpg
 impactMetrics:
   title: Measurable Results
   intro: >-
     Since our founding, we've achieved significant milestones in forest
     restoration and community empowerment across Rwanda.
   metrics:
-    - icon: TreePine
-      value: 2.5M+
+    - icon: 'Tree '
+      value: 10000+
       label: Trees Planted
-      description: Native species planted across degraded landscapes
+      description: >-
+        7000 Grafted fruits trees and native indigenous species planted across
+        degraded landscapes
     - icon: Globe
-      value: 15,000+
+      value: 1000+
       label: Hectares Restored
-      description: Forest and agricultural land brought back to life
+      description: Agricultural land brought back to life
     - icon: Users
       value: 5,000+
       label: Farmers Trained
       description: Smallholder farmers equipped with sustainable practices
     - icon: TrendingUp
       value: 85%
-      label: Success Rate
+      label: Survival rate
       description: Tree survival rate in our restoration projects
 partners:
   title: Strategic Collaborations
@@ -119,6 +136,6 @@ annual_reports: []
 finalCTA:
   heading: Ready to Make a Difference?
   body: >-
-    Join us in our mission to restore Rwanda's forests and empower communities.
+    Join us in our mission to restore Rwanda's land and empower communities.
     Whether you're an individual, organization, or funder, there's a place for
     you in our work.
