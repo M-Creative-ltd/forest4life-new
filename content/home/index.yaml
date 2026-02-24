@@ -12,24 +12,28 @@ hero:
     text: Learn About Us
     href: /about
   stats:
-    - value: 1,000+
-      label: Hectares Restored
-    - value: 50,000+
+    - value: 10,000+
+      label: Hectares to be restored by 2030
+    - value: 10,000+
       label: Trees Planted
-    - value: 500+
+    - value: 200+
       label: Farmers Trained
 whoWeAre:
-  title: Leading Rwanda's Forest Restoration
+  title: >-
+    To become Rwanda’s leading youth-driven organization advancing
+    climate-resilient agriculture and landscape restoration by 2035.
   paragraphs:
-    - >-
-      4At Forest4Life, The Forest4Life Project is dedicated to restoring
-      degraded land in Rwanda through reforestation, agroforestry, and
-      sustainable land management practices.
     - >-
       By planting native trees, training farmers in Good Agricultural Practices
       (GAP) and conservation agriculture, and engaging youth in environmental
       stewardship, we aim to enhance biodiversity, mitigate climate change, and
       create a sustainable future.
+    - >-
+      We restore degraded land through agroforestry and conservation agriculture
+      by integrating grafted fruit trees and native indigenous species. We equip
+      farmers and young people with practical skills in sustainable land
+      management to improve income, soil health, and long-term climate
+      resilience across Rwanda.
   keyValues:
     - icon: Leaf
       title: Environmental Restoration
