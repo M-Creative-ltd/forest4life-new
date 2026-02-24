@@ -1,10 +1,9 @@
 hero:
-  title: Forest Restoration in Rwanda
-  highlightedPhrase: One Tree at a Time
+  title: Land Restoration in Rwanda
+  highlightedPhrase: Restoring Land. Growing Futures.
   subtitle: >-
     Join Forest4Life in transforming degraded lands across Rwanda through
-    sustainable reforestation, empowering communities, and creating a greener
-    future.
+    agroforestry, empowering smallholder farmers, and creating a greener future.
   backgroundImage: /images/home/hero/backgroundImage.jpeg
   primaryCTA:
     text: Explore Our Programs
@@ -44,14 +43,17 @@ whoWeAre:
   mission:
     title: Our Mission
     description: >-
-      Creating a sustainable future through forest restoration, community
-      empowerment, and environmental education across Rwanda.
+      To combat land degradation, climate vulnerability, and rural poverty by
+      restoring degraded landscapes through large-scale reforestation,
+      climate-resilient agroforestry, and youth-led environmental stewardship
+      delivering triple wins for ecosystems, smallholder livelihoods, and
+      community resilience.
     foundedYear: '2023'
 projectsIntro:
   title: Transforming Communities Through Action
   intro: >-
     Discover our ongoing and completed projects that are making a real
-    difference in forest restoration and community empowerment across Rwanda.
+    difference in land restoration and community empowerment across Rwanda.
   featured_projects:
     - trial-of-this-project
     - trial-of-this-project-copy
@@ -67,8 +69,9 @@ servicesIntro:
   ctaPanel:
     heading: Ready to Make a Difference?
     body: >-
-      Join us in our mission to restore Rwanda's forests and empower communities
-      through sustainable practices and environmental education.
+      Join us in our mission to restore Rwanda's land and empower farming
+      communities through sustainable agriculture practices and environmental
+      education.
     primaryCTA:
       text: Partner With Us
       href: /contact
