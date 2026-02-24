@@ -60,9 +60,7 @@ servicesIntro:
   intro: >-
     We provide integrated services that address environmental restoration,
     agricultural sustainability, and community empowerment.
-  featured_services:
-    - kwita-ingagi-amazina
-    - kwita-ingagi-amazina-copy
+  featured_services: []
   ctaPanel:
     heading: Ready to Make a Difference?
     body: >-
