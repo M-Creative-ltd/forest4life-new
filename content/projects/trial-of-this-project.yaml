@@ -29,8 +29,17 @@ impact_metrics:
   - label: Price per unit ($ or USD )
     value: 1
 linked_partners: []
+contact_person: kamanzi-claudine
 activities: []
 timeline: []
 hero_image: /images/projects/trial-of-this-project/hero_image.jpg
-gallery: []
+gallery:
+  - image: /images/projects/trial-of-this-project/gallery/0/image.jpeg
+    caption: 'Grafted avocado '
+  - image: /images/projects/trial-of-this-project/gallery/1/image.jpeg
+  - image: /images/projects/trial-of-this-project/gallery/2/image.jpeg
+  - image: /images/projects/trial-of-this-project/gallery/3/image.jpeg
+  - image: /images/projects/trial-of-this-project/gallery/4/image.jpeg
+  - image: /images/projects/trial-of-this-project/gallery/5/image.jpeg
+    caption: Umuko seedling/native tree
 documents: []
