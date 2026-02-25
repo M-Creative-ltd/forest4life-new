@@ -19,13 +19,16 @@ executive_summary: >-
   land degradation. The nursery produces resilient grafted fruit trees and
   native indigenous species to restore degraded land and improve smallholder
   farmer income through agroforestry.
-impact_metrics: []
-linked_partners:
-  - partner: toyota-copy
-    role: Partner
-  - partner: toyota-copy-copy
-    role: Partner
-contact_person: david-murenzi
+impact_metrics:
+  - label: Size of Nursery in meter square
+    value: 1000
+  - label: Number of trees can be produced
+    value: 25000
+  - label: Trees we produce
+    value: 12000
+  - label: Price per unit ($ or USD )
+    value: 1
+linked_partners: []
 activities: []
 timeline: []
 hero_image: /images/projects/trial-of-this-project/hero_image.jpg
