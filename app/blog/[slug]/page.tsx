@@ -46,28 +46,34 @@ export default async function BlogDetailPage(props: { params: Promise<{ slug: st
   };
 
   // Helper to render markdoc content
-  const renderMarkdocContent = (content: any) => {
+  const renderMarkdocContent = async (content: any) => {
     if (!content) return null;
-    
+  
     try {
-      if (typeof content === 'string') {
-        const ast = Markdoc.parse(content);
+      // 1. Resolve the Keystatic async function if necessary
+      const data = typeof content === 'function' ? await content() : content;
+  
+      // 2. Handle String (Raw Markdown)
+      if (typeof data === 'string') {
+        const ast = Markdoc.parse(data);
         const renderable = Markdoc.transform(ast);
         return Markdoc.renderers.react(renderable, React);
       }
-      
-      if (typeof content === 'object') {
-        // Assume it is already an AST
-        const renderable = Markdoc.transform(content);
+  
+      // 3. Handle Keystatic Document Object (AST)
+      // Keystatic returns an object with a 'node' property for Markdoc
+      if (typeof data === 'object') {
+        const node = data.node || data; 
+        const renderable = Markdoc.transform(node);
         return Markdoc.renderers.react(renderable, React);
       }
     } catch (e) {
       console.error("Error rendering markdoc:", e);
     }
-
-    return <p className="text-muted-foreground">Content is being prepared.</p>;
+  
+    return <p className="text-muted-foreground">Content unavailable.</p>;
   };
-
+  
   const shareUrl = `/blog/${slug}`;
 
   return (
