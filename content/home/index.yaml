@@ -9,8 +9,8 @@ hero:
     climate resilience across Rwanda.
   backgroundImage: /images/home/hero/backgroundImage.jpeg
   primaryCTA:
-    text: Explore Our Programs
-    href: /services
+    text: Explore Our Projects
+    href: /project
   secondaryCTA:
     text: Learn About Us
     href: /about
@@ -52,9 +52,8 @@ projectsIntro:
     Discover our ongoing and completed projects that are making a real
     difference in land restoration and community empowerment across Rwanda.
   featured_projects:
-    - trial-of-this-project
-    - trial-of-this-project-copy
-    - trial-of-this-project-copy-copy
+    - Nursery
+    - forest-4-life-club-club-initiative
 servicesIntro:
   title: Comprehensive Solutions for Sustainable Growth
   intro: >-
